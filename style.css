@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;1,100&display=swap');
+
+
+*{
+    margin: 0 ;
+    padding: 0 
+}
+nav img{
+    width: 100px;
+    margin-left:-70px ;
+    margin-bottom: 60px;
+
+}
+/*styling*/
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,0,0,0.5),rgba(4,9,30,0.5)) , url(image/building_PNG73.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.nav-links{
+    text-align: right;
+    flex:1;
+}
+.nav-links ul li{
+    list-style:lower-alpha;
+    display: inline-block;
+    padding: 8px 20px;
+}
+.nav-links ul li a{
+    color:rgb(221, 216, 209);
+    text-decoration: none;
+    font-size: 15px;
+    margin-right: 30px;
+}
+.nav-links ul li::after{
+    content: '';
+    width:0%;
+    height: 2px;
+    background: #f7882f;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+.text{
+    width:100%;
+    color: #e4decd;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+.text h1{
+    font-size: 80px;
+    margin-left: 30px;
+}
+.text p{
+    font-size: 25px;
+    padding-top: 20px;
+
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color:white;
+    border: 1px solid white;
+    background:transparent;
+    position: relative;
+    cursor: pointer;
+    padding: 12px 34px;
+    margin-top:30px;
+}
+.btn:hover{
+    box-shadow: 1px solid #f44366;
+    background: #f44366;
+    transition:1ms;
+}
+
+
+/********** cousrse section *********/
+.course{
+    width:70%;
+    margin:auto;
+    padding-top: 100px;
+    text-align: center;
+    
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    padding:10px;
+    font-size: 17px;
+    font-weight:300;
+    color:#6b7a87;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 30%;
+    background: #dcc7aa;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    justify-content: space-between;
+    margin-bottom: 5%;
+
+}
+h3{
+    font-weight: 500;
+    margin:10px 0;
+    text-align: center;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2) ;
+}
+/*campus styling */
+
+.campus{
+width: 80%;
+margin:auto;
+text-align: center;
+padding-top: 50px;
+}
+.campus-col{
+
+flex-basis: 40%;
+border-radius: 10px;
+margin-bottom: 30px;
+position: relative;
+overflow:hidden;
+}
+.campus-col img{
+     width: 95%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.layer:hover{
+    background: rgba(226, 0, 0,0.7);
+    transition: 0.5s;
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color:black;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform:translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 50%;
+    opacity: 1;
+}
+/* facility styling*/
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.facilities-col{
+    flex-basis:31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+    justify-content: space-between;
+
+}
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+.facilities-col p{
+    padding: 0;
+}
+.facilities-col h3{
+    font-weight: 500;
+    margin: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/****** testimonial styling *********/
+.testimonial{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    text-align: center;
+}
+.testimonial-col{
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-left: 8%;
+    margin-right: 8%;
+    cursor: pointer;
+    padding:30px;
+    justify-content: space-between;
+    display: flex;
+    
+
+}
+.testimonial-col img{
+    height: 100px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 10px;
+}
+.testimonial-col p{
+    
+    padding: 0;
+}
+.testimonial-col h3{
+    margin-top: 15px;
+    text-align: center;
+}
+.testimonial-col.fas{ 
+    color: rebeccapurple
+}
+
+
+/*******************  cta styling section ************/
+.cta{
+    border-radius: 10px;
+    margin: 100px;
+    width: 80%;
+    text-align: center;
+    background-image: linear-gradient(rgba(4,0,0,0.5),rgba(4,9,30,0.5)) , url(image/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 200px 0;
+}
+.cta h1{
+    padding:0;
+    color:#fff;
+    margin-bottom: 40px;
+    
+}
+/***** stylin footer section *****/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: wheat;
+}
+
